@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chef.MenuItemAdd">
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/add_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_button"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:padding="0dp"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/red600"
+            android:textSize="12sp"
+
+            app:cornerRadius="1dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/initial_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_input"
+        android:hint="@string/item_title_1"
+        android:inputType="textCapSentences"
+        android:textAlignment="center"
+        android:textColor="@color/main"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/add_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/item_title">
+
+
+        <ImageButton
+            android:id="@+id/add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/add_image"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:padding="6dp"
+            android:src="@drawable/camera" />
+
+
+        <ImageButton
+            android:id="@+id/cancel_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/cancel"
+            android:padding="6dp"
+            android:src="@drawable/cancel"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_description"
+        android:layout_below="@id/add_image_layout"
+        android:scaleType="center"
+        app:iss_auto_cycle="false"
+        app:iss_error_image="@drawable/default_image"
+        app:iss_placeholder="@drawable/default_image"
+        app:iss_title_background="@android:color/transparent" />
+
+    <EditText
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/calorie_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_input"
+        android:hint="@string/item_description_2"
+        android:inputType="textCapSentences"
+        android:textAlignment="center"
+        android:textColor="@color/main"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/calorie_layout"
+        android:layout_width="match_parent"
+        android:layout_above="@id/category_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/item_calories"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_input"
+            android:hint="@string/item_calories"
+            android:inputType="number"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/main"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/item_price"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_input"
+            android:hint="@string/item_price"
+            android:inputType="numberDecimal"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/main"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/vegan_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/workout"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/workout"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/creative"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/creative"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/healthy"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/healthy"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/low_cal"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/low_calorie"
+                android:padding="0dp"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/low_carb"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/low_carbs"
+                android:padding="0dp"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/vegan"
+                android:layout_width="90dp"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vegan"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pasta"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pasta"
+                android:padding="0dp"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seafood"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="@string/seafood"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/burger"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/burger"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+            app:cornerRadius="1dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:textSize="12sp"
+            android:layout_alignBottom="@id/vegan_layout"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chef.AccountSettings">
+
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/add_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/account_settings"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile"
+                android:textColor="@color/main"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/personal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:drawablePadding="5dp"
+                android:text="@string/profile"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/edit" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/privatize_data"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/yes_private"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/yes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    app:cornerRadius="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/no_private"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:backgroundTint="@color/secondary"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    app:cornerRadius="1dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ta_ste"
+                android:textColor="@color/main"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/guide_to_purchasing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="5dp"
+                android:text="Taïste: Guide to Purchasing"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/edit"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/data_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:drawablePadding="5dp"
+                android:text="@string/privacy_policy"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/edit" />
+
+
+            <TextView
+                android:id="@+id/terms_of_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:drawablePadding="5dp"
+                android:text="@string/terms_of_service"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/edit" />
+
+
+            <TextView
+                android:id="@+id/report_an_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:drawablePadding="5dp"
+                android:text="@string/report_an_issue"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/edit" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/logout"
+                android:backgroundTint="@color/secondary"
+                android:textAllCaps="false" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/delete_account"
+                android:textAllCaps="false"
+                android:textColor="@color/red800" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

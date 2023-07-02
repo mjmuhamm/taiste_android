@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Start">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+
+
+        <ImageView
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:contentDescription="@string/bloom"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/app_logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:layout_marginStart="-5dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/taiste"
+        android:textColor="@color/main"
+        android:src="@drawable/bloom"/>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_the_guts_community"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/secondary"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/main"
+        app:cornerRadius="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/user"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chef"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="1dp"
+        android:textColor="@color/main"
+        android:text="@string/chef"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/gray400"
+        android:text="@string/please_read_our"/>
+
+
+        <TextView
+            android:id="@+id/terms_of_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginStart="4.5dp"
+            android:layout_marginEnd="4.5dp"
+            android:textColor="@color/gray500"
+            android:text="@string/terms_of_service_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/gray400"
+            android:layout_marginEnd="4.5dp"
+            android:text="@string/and_our"/>
+
+
+        <TextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/gray500"
+            android:text="@string/privacy_policy_2"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/gray400"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/before_continuing"/>
+</LinearLayout>

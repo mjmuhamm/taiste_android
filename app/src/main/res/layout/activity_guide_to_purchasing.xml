@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".both.GuideToPurchasing">
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Taïste: Guide To Purchasing"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/red700"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:cornerRadius="1dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/individual_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/initial_layout"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Hi Taïste Users"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for being here! We hope to service your pallettes with inspring chefs from all over the world."
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our chefs have put together menus that they believe best represent their interests and capabilities to best service you. In this, please take each dish listed as personal suggestions from the chef, and continue with the inspiration and creativity from the chef, and the boldness from your own ideal catering menu. We push for full transparency and communication between you and the chef so that suggestions can be made, and the chef can confirm or deny his or her willingness to partake. Enjoy!"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cater Hiring"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Catering Events are scheduled in the ‘Order Detail’ screen, with the necessary information required to fulfill your desired catering needs. Please note that all suggestions are at the discrepancy of the chef, and the promoted menu item is the item that you, the consumer, can expect to be fully satisfied with. Please be detail oriented in your answers."
+                android:layout_marginTop="3dp"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Executive Chef Hiring"
+                android:textColor="@color/main"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Executive Items are scheduled in the ‘Order Detail’ screen, with the necessary information required to fulfill you desired personal chef. Here you are able to detail a time allotment with the options of Trial Run, Weeks, and Months. You will also be able to describe allergies, additional menu item requests for additional days, and other notes and questions that may arise. Taïste operates as the intermediary for each payment, and the chef, will be paid after each day that is outlined in the purchase agreement."
+                android:layout_marginTop="3dp"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal Kit Purchasing"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All MealKit Requests will be scheduled in the ‘Order Detail’ screen, with the necessary information required to fulfill you desired meal kit needs. Here you are able to outline the length of the meal kit order with a notes option to detail any ingredients to stay away from, and any other questions that may arise."
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additionally, we include a $70 additional charge for the chef in the purchasing of meal kit containers and boxes to securely ship your meal kit purchase for a 30 day time window. If your meal kit purchase is only inclusive of one week, then a $45 additional charge will be accrued in your checkout price. Before shipping, we require each chef to take a picture showcasing how each meal kit item is prepared and how it will be shipped to your front door. These pictures will require approval by you and / or our internal staff, whichever sees the images first, to ensure quality control."
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pricing"
+                android:textColor="@color/main"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We give full autonomy to the chef to consider their ingredient and preparation expenses before marketing an item price; but we have safeguarded windows of expectation for our customers to beware of any over-charged menu prices. Please be cautious. Although some chefs are premier, well-experienced and deserving of above average prices, we open our platform to all culinary enthusiasts, culinary students, chef entrepreneurs, restaurant chefs, and hobbyists. Please consider this in your decision making."
+                android:layout_marginTop="3dp"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cater Items price similarly to restaurant dishes and thus, you can expect to pay anywhere from $12 - $60 for per serving. As a courtesy, we have discounted the price for multiple day events."
+                android:textColor="@color/main"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Executive Chef’s can charge anywhere from $100 - $4,000 for one event. This range is represented by the years of experience of the chef, menu items associated with the event, and the chef’s availability."
+                android:textColor="@color/main"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal Kit prices can range anywhere from $8 - $15 per plate."
+                android:textColor="@color/main"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taïste platform fees are about 5% for consumers plus local and federal sales taxes which average to about 9%."
+                android:textColor="@color/main"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchases"
+                android:textColor="@color/main"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main"
+                android:text="All purchases are made through the application, and Taïste, operates as the intermediary for the event, dispersing the payment to the chef exactly one hour after the scheduled event date and event time. Should any concerns arise to your trust of a fulfilling experience, please head to the ‘Settings’ -> ‘Report An Issue’ tab. Here, be sure to describe your issues in detail, ensuring for our representative to handle any adjustments completely and efficiently. Additionally, we have tiered the pricing structure of cater purchases to consider guest attendance. "
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancellations"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All consumers are able to cancel any purchased event at any time. If the chef has not accepted your event request yet, upon cancellation, you will receive a full, tax included, refund. After the chef has accepted, if your cancellation occurs 7 days or more before the event is scheduled, you will receive 95% of your total event cost refunded. If your cancellation occurs within a 7 day time period of the event’s scheduling, you can expect to receive an 85% reimbursement."
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Travel Fee Payments"
+                android:textColor="@color/main"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In the event of a chef being further than 50 miles of the event location, the chef will be awarded the option to request a traveling fee. This traveling fee, will be negotiated, and paid in full, with you and the chef after the event has been purchased, in the “Messages for Travel Fee” button, located in the ‘Orders’ ->  ‘Pending’ tab. Here you will be able to communicate directly with the chef, and the chef, if need be, request a traveling fee. To purchase, a button in the message screen will appear showcasing a payment sheet resembling the payment sheet presented in the ‘Checkout’ location."
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message Requests"
+                android:textColor="@color/main"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When visiting each chef profile, located at the top right of the screen, a message button will appear. Here, feel free to send your potential chef a message with menu item requests, and other questions about your potential hire. After sending an initial message, you must wait until the chef returns a message to continue the conversation."
+                android:layout_marginTop="3dp"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We know this process can be overwhelming, and we will be with you every step of the way."
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/main"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".chef.fragments.Dashboard">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="34dp"
+        android:visibility="invisible"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/notifications_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/notifications"
+                android:src="@drawable/notifications" />
+
+            <ImageView
+                android:id="@+id/notifications_image"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:visibility="gone"
+                android:layout_marginStart="19dp"
+                android:contentDescription="@string/notifications"
+                android:src="@drawable/circle" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/chef_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/initial_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/chef_profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/type_of_service_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:hint="@string/type_of_service">
+
+                <AutoCompleteTextView
+                    android:id="@+id/type_of_service_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:textColor="@color/main"
+                    android:textSize="13sp"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/menu_item_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="7dp"
+                android:hint="@string/menu_item">
+
+                <AutoCompleteTextView
+                    android:id="@+id/menu_item_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:textColor="@color/main"
+                    android:textSize="13sp"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toggle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/profile_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/weekly"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weekly"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/secondary"
+            app:cornerRadius="1dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/monthly"
+            android:layout_width="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/main"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="1dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/total"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:padding="4dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+
+            android:textColor="@color/main"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="1dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/toggle_layout"
+        android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/weekly_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/monthly_bar_chart"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/total_pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,147 @@
+package com.ruh.taiste.both.models
+
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class PendingOrders(
+
+    val cancelled: String,
+    val chefEmail: String,
+    val chefImageId: String,
+    val chefNotificationToken: String,
+    val chefUsername: String,
+    val city: String,
+    val distance: String,
+    val eventDates: ArrayList<String>,
+    val eventTimes: ArrayList<String>,
+    val eventNotes: String,
+    val eventType: String,
+    val eventQuantity: String,
+    val itemDescription: String,
+    val itemTitle: String,
+    val location: String,
+    val menuItemId: String,
+    val numberOfEvents: Number,
+    val orderDate: String,
+    val orderId: String,
+    val orderUpdate: String,
+    val priceToChef: Number,
+    val state: String,
+    val taxesAndFees: Number,
+    val totalCostOfEvent: Number,
+    val travelFeeOption: String,
+    val travelFee: String,
+    val travelFeeApproved: String,
+    val travelFeeRequested: String,
+    val typeOfService: String,
+    val unitPrice: String,
+    val user: String,
+    val userImageId: String,
+    val userNotificationToken: String,
+    val documentId: String,
+    val creditsApplied: String,
+    val creditIds: ArrayList<String>,
+    val allergies: String,
+    val additionalMenuItems: String,
+    val userName: String,
+    val userEmail: String,
+    val eventDatesForUser: ArrayList<String>
+
+) : Parcelable
+
+
+
+@Parcelize
+data class ScheduledOrders(
+
+    val cancelled: String,
+    val chefEmail: String,
+    val chefImageId: String,
+    val chefNotificationToken: String,
+    val chefUsername: String,
+    val city: String,
+    val distance: String,
+    val eventDates: ArrayList<String>,
+    val eventTimes: ArrayList<String>,
+    val eventNotes: String,
+    val eventType: String,
+    val eventQuantity: String,
+    val itemDescription: String,
+    val itemTitle: String,
+    val location: String,
+    val menuItemId: String,
+    val numberOfEvents: Number,
+    val orderDate: String,
+    val orderId: String,
+    val orderUpdate: String,
+    val priceToChef: Number,
+    val state: String,
+    val taxesAndFees: Number,
+    val totalCostOfEvent: Number,
+    val travelFeeOption: String,
+    val travelFee: String,
+    val travelFeeApproved: String,
+    val travelFeeRequested: String,
+    val typeOfService: String,
+    val unitPrice: String,
+    val user: String,
+    val userImageId: String,
+    val userNotificationToken: String,
+    val documentId: String,
+    val creditsApplied: String,
+    val creditIds: ArrayList<String>,
+    val allergies: String,
+    val additionalMenuItems: String,
+    val userName: String,
+    val userEmail: String,
+    val eventDatesForUser: ArrayList<String>
+
+) : Parcelable
+
+
+@Parcelize
+data class CompleteOrders(
+
+    val cancelled: String,
+    val chefEmail: String,
+    val chefImageId: String,
+    val chefNotificationToken: String,
+    val chefUsername: String,
+    val city: String,
+    val distance: String,
+    val eventDates: ArrayList<String>,
+    val eventTimes: ArrayList<String>,
+    val eventNotes: String,
+    val eventType: String,
+    val eventQuantity: String,
+    val itemDescription: String,
+    val itemTitle: String,
+    val location: String,
+    val menuItemId: String,
+    val numberOfEvents: Number,
+    val orderDate: String,
+    val orderId: String,
+    val orderUpdate: String,
+    val priceToChef: Number,
+    val state: String,
+    val taxesAndFees: Number,
+    val totalCostOfEvent: Number,
+    val travelFeeOption: String,
+    val travelFee: String,
+    val travelFeeApproved: String,
+    val travelFeeRequested: String,
+    val typeOfService: String,
+    val unitPrice: String,
+    val user: String,
+    val userImageId: String,
+    val userNotificationToken: String,
+    val documentId: String,
+    val creditsApplied: String,
+    val creditIds: ArrayList<String>,
+    val allergies: String,
+    val additionalMenuItems: String,
+    val userName: String,
+    val userEmail: String
+
+) : Parcelable

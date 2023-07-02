@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "614931236292",
+    "project_id": "taiste-23ef3",
+    "storage_bucket": "taiste-23ef3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614931236292:android:a8a4035ff877a248ccd091",
+        "android_client_info": {
+          "package_name": "com.ruh.taiste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614931236292-aja7fan8uemfs8nh2s5i43kcuqaf138q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE00SHub3JmoluoLd3kVsOQKwKl1rfy44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614931236292-aja7fan8uemfs8nh2s5i43kcuqaf138q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/initial_view"
+        android:visibility="gone"
+        android:layout_height="210dp">
+
+        <TextView
+            android:id="@+id/info_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_label"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/main"
+            android:textSize="14sp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/info_ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@id/info_text"
+            android:padding="4dp"
+            android:visibility="invisible"
+            android:text="@string/ok"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+            app:cornerRadius="1dp"
+            tools:ignore="RelativeOverlap" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/initial_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/initial_layout"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/gray300"/>
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/initial_view"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/event_type_and_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/main"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_type_and_quantity"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/main"
+        android:textSize="13sp" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/show_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/location"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/show_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/show_dates"
+            android:textColor="@color/main"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:cornerRadius="1dp"
+            android:backgroundTint="@color/white"
+            android:padding="4dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/show_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/show_notes"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/main"
+            android:textAllCaps="false"
+            app:cornerRadius="1dp"
+            android:backgroundTint="@color/white"
+            android:padding="4dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/messages_for_travel_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/show_info"
+        android:text="@string/messages_for_travel_fee"
+        android:textSize="12sp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/main"
+        android:textAllCaps="false"
+        app:cornerRadius="1dp"
+        android:backgroundTint="@color/white"
+        android:padding="4dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/messages_for_travel_fee"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/white"
+            android:padding="4dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/red600"
+            app:cornerRadius="1dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/messages_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/white"
+            android:padding="4dp"
+            android:visibility="invisible"
+            android:text="@string/messages"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+            app:cornerRadius="1dp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

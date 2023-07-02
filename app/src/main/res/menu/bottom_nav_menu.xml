@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        app:itemIconSize="7dp"
+        app:labelVisibilityMode="labeled"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        app:itemIconSize="7dp"
+        app:labelVisibilityMode="labeled"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/nav_feed"
+        app:itemIconSize="7dp"
+        android:icon="@drawable/feed_filled"
+        app:labelVisibilityMode="labeled"
+        android:title="@string/feed" />
+
+    <item
+        android:id="@+id/nav_orders"
+        app:itemIconSize="7dp"
+        android:icon="@drawable/orders"
+        app:labelVisibilityMode="labeled"
+        android:title="@string/orders" />
+
+    <item
+        android:id="@+id/nav_me"
+        app:itemIconSize="7dp"
+        android:icon="@drawable/me"
+        app:labelVisibilityMode="labeled"
+        android:title="@string/me" />
+
+</menu>

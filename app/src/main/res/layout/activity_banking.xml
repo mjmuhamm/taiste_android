@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chef.Banking">
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/banking"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/red700"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:cornerRadius="1dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/initial_layout"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/gray300" />
+
+    <TextView
+        android:id="@+id/initial_disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/please_note_that_ruh_does_not_save_any_personal_info_but_instead_collects_only_what_is_necessary_for_our_third_party_banking_provider_stripe_to_be_in_compliance_with_federal_banking_regulation"
+        android:textAlignment="center"
+        android:textColor="@color/gray400"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/toggle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/initial_disclaimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/individual_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondary"
+            android:text="@string/individual"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:cornerRadius="1dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/business_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/business_info"
+            android:textColor="@color/main"
+            android:textSize="12sp"
+            app:cornerRadius="1dp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/individual_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toggle_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stripe_s_terms_of_service"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/currently_stripe_is_our_banking_provider_we_require_each_of_our_chef_s_to_view_stripe_s_terms_of_service_before_accepting_payouts_and_orders"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textSize="11.5sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/click_here_to_view"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:text="@string/click_here_to_view"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp" />
+
+            <LinearLayout
+                android:id="@+id/do_you_accept_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/terms_of_service_accept_image"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/terms_of_service"
+                    android:src="@drawable/circle_unchecked" />
+
+                <TextView
+                    android:id="@+id/terms_of_Service_accept_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/do_you_accept"
+                    android:textColor="@color/gray600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/mcc_code"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/an_mcc_code_is_a_merchant_category_code_describing_your_business_we_recommend_5812_for_catering_services"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray400"
+                        android:textSize="11sp"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/mcc_code"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/mcc_code"
+                    android:inputType="number"
+                    android:textColor="@color/main"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/business_url"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/feel_free_to_use_any_personal_or_social_media_website_describing_your_business"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray400"
+                        android:textSize="11sp"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/business_url"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/business_url"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/main"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/full_name"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/first_name"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/main"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:textColor="@color/main"
+                    android:hint="@string/last_name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dob_month"
+                        android:layout_width="70dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/custom_input"
+                        android:textColor="@color/main"
+                        android:hint="@string/month"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        tools:ignore="TextFields" />
+
+
+                    <EditText
+                        android:id="@+id/dob_day"
+                        android:layout_width="70dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/main"
+                        android:background="@drawable/custom_input"
+                        android:hint="@string/day"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        tools:ignore="TextFields" />
+
+
+                    <EditText
+                        android:id="@+id/dob_year"
+                        android:layout_width="90dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/main"
+                        android:background="@drawable/custom_input"
+                        android:hint="@string/year"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        tools:ignore="TextFields" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/email"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="190dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/email"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/main"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/phone_number"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/main"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/individual_address"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/street_address"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/street_address"
+                    android:importantForAutofill="no"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+                <EditText
+                    android:id="@+id/street_address_2"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/street_address_2"
+                    android:importantForAutofill="no"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/city"
+                    android:importantForAutofill="no"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="70dp"
+                        android:layout_height="46dp"
+                        android:textColor="@color/main"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/custom_input"
+                        android:hint="@string/state"
+                        android:importantForAutofill="no"
+                        android:inputType="textPostalAddress"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        tools:ignore="TextFields" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/zip_code"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/zip_code"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/social_security_number"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/social_security_number"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/social_security_number"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/external_account"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/external_account_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        android:id="@+id/external_account_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/please_enter_banking_info"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="18dp"
+                        android:textColor="@color/main"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/external_account_edit_button"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/account_edit_button"
+                        android:src="@drawable/pencil" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"
+                app:cornerRadius="1dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/business_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/toggle_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stripe_s_terms_of_service"
+                android:textColor="@color/main"
+
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/currently_stripe_is_our_banking_provider_we_require_each_of_our_chef_s_to_view_stripe_s_terms_of_service_before_accepting_payouts_and_orders"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textSize="11.5sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/click_here_to_view_b"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:text="@string/click_here_to_view"
+                android:textAllCaps="false"
+                android:textColor="@color/main"
+                android:textSize="12sp"
+                app:cornerRadius="1dp" />
+
+            <LinearLayout
+                android:id="@+id/do_you_accept_layoutB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/terms_of_service_accept_image_b"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/terms_of_service"
+                    android:src="@drawable/circle_unchecked" />
+
+                <TextView
+                    android:id="@+id/terms_of_Service_accept_text_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/do_you_accept"
+                    android:textColor="@color/gray600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300"
+                tools:ignore="TooManyViews" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/mcc_code"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/an_mcc_code_is_a_merchant_category_code_describing_your_business_we_recommend_5812_for_catering_services"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray400"
+                        android:textSize="11sp"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/mcc_code_b"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/mcc_code"
+                    android:inputType="number"
+                    android:textColor="@color/main"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:importantForAutofill="no" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/business_url"
+                        android:textColor="@color/main"
+                        android:layout_marginStart="20dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/feel_free_to_use_any_personal_or_social_media_website_describing_your_business"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray400"
+                        android:textSize="11sp"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/business_url_b"
+                    android:layout_width="190dp"
+                    android:textColor="@color/main"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/business_url"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/company_name"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/company_name"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/company_name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:layout_marginStart="20dp"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/company_phone"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/phone_b"
+                    android:layout_width="190dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="46dp"
+                    android:textColor="@color/main"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/company_phone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/company_address"
+                    android:textColor="@color/main"
+                    android:layout_marginStart="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/street_address_b"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/main"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/street_address"
+                    android:importantForAutofill="no"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+                <EditText
+                    android:id="@+id/street_address_2_b"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/street_address_2"
+                    android:importantForAutofill="no"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/city_b"
+                        android:layout_width="190dp"
+                        android:layout_height="46dp"
+                        android:textColor="@color/main"
+                        android:background="@drawable/custom_input"
+                        android:hint="@string/city"
+                        android:importantForAutofill="no"
+                        android:inputType="textPostalAddress"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        tools:ignore="TextFields" />
+
+
+                    <EditText
+                        android:id="@+id/state_b"
+                        android:layout_width="70dp"
+                        android:layout_height="46dp"
+                        android:textColor="@color/main"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/custom_input"
+                        android:hint="@string/state"
+                        android:importantForAutofill="no"
+                        android:inputType="textPostalAddress"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        tools:ignore="TextFields" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/zip_code_b"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/zip_code"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:layout_marginStart="20dp"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/tax_id"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/if_your_company_has_an_employer_s_identification_number_please_enter_here_if_not_please_enter_the_social_security_number_used_to_do_business"
+                    android:textColor="@color/gray400"
+                    android:layout_marginTop="7dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="11sp"
+                    tools:ignore="RtlCompat" />
+
+                <EditText
+                    android:id="@+id/tax_id"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/tax_id"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="TextFields" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/representative"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/each_account_is_required_to_have_a_representative_to_take_responsibility_for_the_account"
+                    android:textColor="@color/gray400"
+                    android:textAlignment="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="11sp"
+                    tools:ignore="RtlCompat" />
+
+                <LinearLayout
+                    android:id="@+id/representative"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        android:id="@+id/representative_text_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Add Representative"
+                        android:layout_marginEnd="18dp"
+                        android:textColor="@color/main"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/representative_edit_button_b"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/account_edit_button"
+                        android:src="@drawable/pencil" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/owners"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/owner_button"
+                        android:layout_width="wrap_content"
+                        android:contentDescription="@string/owner_add"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow_right"
+                        android:layout_marginStart="10dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/all_owners_with_25_or_more_ownership_must_be_reported_or_your_account_may_stop_processing_payouts_at_750_000"
+                    android:textColor="@color/gray400"
+                    android:textAlignment="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="11sp"
+                    tools:ignore="RtlCompat" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/external_account"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/external_account_layout_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        android:id="@+id/external_account_text_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/add_bank_account"
+                        android:layout_marginEnd="18dp"
+                        android:textColor="@color/main"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/external_account_edit_button_b"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/account_edit_button"
+                        android:src="@drawable/pencil" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"
+                app:cornerRadius="1dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="12sp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

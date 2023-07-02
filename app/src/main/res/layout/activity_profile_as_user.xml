@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".both.ProfileAsUser">
+
+    <TextView
+        android:id="@+id/no_items_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:textColor="@color/main"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/mail" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/initial_layout"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/default_profile" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/chef_profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/chef_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Education: Purdue University"
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/chef_passion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="This is a bio text."
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/chef_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Location: Atlanta, GA"
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/user_preference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/user_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Location: Atlanta, GA"
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/toggle_layout"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/profile_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:id="@+id/chef_toggle_layout"
+        android:layout_width="wrap_content"
+            android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/catering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/catering"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/secondary"
+            app:cornerRadius="1dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/personal_chef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_chef"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/main"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="1dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/meal_kit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:text="@string/meal_kit"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/main"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="1dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:padding="4dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="@color/main"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="1dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_toggle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/orders"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/secondary"
+                app:cornerRadius="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chefs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/chefs"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/likes"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="1dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/reviews"
+                android:padding="4dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="1dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recycler_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggle_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler1_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler2_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler3_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler4_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+            <GridView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:horizontalSpacing="4dp"
+                android:numColumns="3"
+                android:columnWidth="150dp"
+                android:verticalSpacing="4dp"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

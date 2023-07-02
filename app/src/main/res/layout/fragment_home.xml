@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".user.fragments.Home">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="34dp"
+        android:layout_centerInParent="true"
+        android:layout_height="34dp"/>
+
+    <TextView
+        android:id="@+id/no_items_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:textSize="14sp"
+        android:textColor="@color/main"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/toggle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/catering"
+        android:layout_width="wrap_content"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_height="wrap_content"
+        android:text="@string/catering"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/secondary"
+        app:cornerRadius="1dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/personal_chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:text="@string/personal_chef"
+        android:textAllCaps="false"
+        android:textColor="@color/main"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="1dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/meal_kit"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:text="@string/meal_kit"
+        android:textColor="@color/main"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="1dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/checkout_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toggle_layout"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:id="@+id/filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/filter"
+        android:src="@drawable/filter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter"
+            android:textSize="17sp"
+            android:textColor="@color/main"
+            android:layout_marginStart="7dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_marginEnd="15dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginEnd="13dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/main"
+                android:textSize="17sp"/>
+
+            <LinearLayout
+                android:id="@+id/checkout_button"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkout"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/main"/>
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="-8dp"
+                android:layout_marginTop="0.8dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/checkout"
+                android:src="@drawable/right_arrow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/checkout_layout"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catering_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/personal_chef_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/meal_kit_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

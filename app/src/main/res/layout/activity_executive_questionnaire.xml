@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chef.ExecutiveQuestionnaire">
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/add_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chef Questionnaire"
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_button"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:padding="0dp"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/red600"
+            android:textSize="12sp"
+            android:visibility="invisible"
+
+            app:cornerRadius="1dp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/brief_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pay_layout"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray400"
+                android:textSize="11sp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/please_answer_all_questions_for_you_profile_to_appear_to_users"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/main"
+                    android:text="@string/how_long_have_you_been_a_personal_chef"/>
+
+                <EditText
+                    android:id="@+id/length_of_personal_chef"
+                    android:layout_width="190dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/length_in_years"
+                    android:inputType="number"
+                    android:textColor="@color/main"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/main"
+                    android:text="@string/what_is_your_categorical_specialty"/>
+
+                <EditText
+                    android:id="@+id/specialty"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/specialty"
+                    android:inputType="text"
+                    android:textColor="@color/main"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/main"
+                    android:text="@string/what_helps_you_excel_in_your_pursuit_of_becoming_a_renowned_chef"/>
+
+                <EditText
+                    android:id="@+id/what_helps_you_excel"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/what_helps_you_excel"
+                    android:inputType="text"
+                    android:textColor="@color/main"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/main"
+                    android:text="@string/describe_your_most_prized_accomplishment"/>
+
+                <EditText
+                    android:id="@+id/most_prized_accomplishment"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/most_prized_accomplishment"
+                    android:inputType="text"
+                    android:textColor="@color/main"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/main"
+                    android:text="@string/are_you_available_for_trial_runs_weeks_and_or_months"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/trial_run"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:textAllCaps="false"
+                        android:text="@string/trial_runs"
+                        android:textColor="@color/main"
+                        app:cornerRadius="1dp"
+                        android:backgroundTint="@color/white"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/weeks"
+                        android:layout_width="103dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:text="@string/weeks"
+                        android:textAllCaps="false"
+                        android:textColor="@color/main"
+
+                        app:cornerRadius="1dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/months"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:textAllCaps="false"
+                        app:cornerRadius="1dp"
+                        android:text="@string/months"
+                        android:textColor="@color/main"
+                        android:backgroundTint="@color/white"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/main"
+                    android:text="@string/are_you_open_to_menu_requests"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/menu_requests_yes"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:textAllCaps="false"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        app:cornerRadius="1dp"
+                        android:backgroundTint="@color/secondary"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/menu_requests_no"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:textAllCaps="false"
+                        android:text="@string/no"
+                        app:cornerRadius="1dp"
+                        android:textColor="@color/main"
+                        android:backgroundTint="@color/white"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/secondary"
+                android:text="Save"
+                android:layout_marginBottom="15dp"
+                android:textAllCaps="false"
+                app:cornerRadius="1dp" />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

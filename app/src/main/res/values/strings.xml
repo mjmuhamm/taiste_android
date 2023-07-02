@@ -1,0 +1,453 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Taïste</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search">Search</string>
+    <string name="feed">Feed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="orders">Orders</string>
+    <string name="me">Me</string>
+    <string name="welcome_to_the_guts_community">Discover the best and brightest chefs, around the world.</string>
+    <string name="user">User</string>
+    <string name="chef">Chef</string>
+    <string name="bloom_chef">Bloom Chef</string>
+    <string name="bloom">Bloom</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="meal_kit">Meal Kit</string>
+    <string name="personal_chef">Personal Chef</string>
+    <string name="catering">Catering</string>
+    <string name="filter">Filter</string>
+    <string name="checkout">Checkout</string>
+    <string name="item_title">This is a sample cater item.</string>
+    <string name="click_here_for_more_detail">Click here for more detail</string>
+    <string name="item_image">Item Image</string>
+    <string name="this_is_an_item_description">This is an item description</string>
+    <string name="item_likes">Item Likes</string>
+    <string name="item_orders">Item Orders</string>
+    <string name="item_rating">Item Rating</string>
+    <string name="item_price">Item Price</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="item_detail">Item Detail</string>
+    <string name="reviews">Reviews</string>
+    <string name="expectation_s_met">Expectation\'s Met</string>
+    <string name="quality">Quality</string>
+    <string name="chef_rating">Chef Rating</string>
+    <string name="total">Total</string>
+    <string name="taxes_and_fees">Taxes And Fees</string>
+    <string name="food_total">Food Total</string>
+    <string name="_0_00">$0.00</string>
+    <string name="cancel">Cancel</string>
+    <string name="pay">Pay</string>
+    <string name="order_details">Order Details</string>
+    <string name="quantity_of_event">Quantity Of Event</string>
+    <string name="type_of_event">Type Of Event</string>
+    <string name="select_the_dates_of_your_event_here">Select the dates of your event here.</string>
+    <string name="dates_of_event">Dates of Event</string>
+    <string name="ok" tools:ignore="ButtonCase,Typos">Ok</string>
+    <string name="clear">Clear</string>
+    <string name="see_all_dates">See All Dates</string>
+    <string name="location">Location</string>
+    <string name="enter_the_location_of_your_event_here">Enter the location of your event here.</string>
+    <string name="street_address">Street Address</string>
+    <string name="suite_apt">Suite / Apt #</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="notes_to_chef">Notes To Chef</string>
+    <string name="notes_to_chef_here">Notes to Chef here.</string>
+    <string name="add">Add</string>
+    <string name="add_dates_of_event">Add Dates of Event</string>
+    <string name="add_location">Add Location</string>
+    <string name="click_here_to_view_detail">Click here to view detail.</string>
+    <string name="content">Content</string>
+    <string name="likes">Likes</string>
+    <string name="chefs">Chefs</string>
+    <string name="settings">Settings</string>
+    <string name="expectations_met">Expectations Met</string>
+    <string name="messages">Messages</string>
+    <string name="accept">Accept</string>
+    <string name="show_notes">Show Notes</string>
+    <string name="show_dates">Show Dates</string>
+    <string name="messages_for_travel_fee">Messages for Travel Fee</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="take_home">Take Home</string>
+    <string name="pending">Pending</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="complete">Complete</string>
+    <string name="pending_chef_acceptance">* pending chef acceptance. *</string>
+    <string name="monthly">Monthly</string>
+    <string name="weekly">Weekly</string>
+    <string name="type_of_service">Type of Service</string>
+    <string name="menu_item">Menu Item</string>
+    <string name="are_you_a_chef_sign_up_here">Are You a Chef? Sign Up Here</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="edit_item">edit item</string>
+    <string name="this_is_an_item_title">This is an item title</string>
+    <string name="enter_message_here">Enter message here...</string>
+    <string name="send_message">send message</string>
+    <string name="travel_fee">Travel Fee</string>
+    <string name="x">X</string>
+    <string name="comments">Comments</string>
+    <string name="view_replies">view_replies</string>
+    <string name="hide">Hide</string>
+    <string name="video_views">video_views</string>
+    <string name="banking">Banking</string>
+    <string name="add_item">add item</string>
+    <string name="item_title_1">Item Title</string>
+    <string name="item_description_2">Item Description</string>
+    <string name="burger">Burger</string>
+    <string name="creative">Creative</string>
+    <string name="healthy">Healthy</string>
+    <string name="low_calorie">Low Calorie</string>
+    <string name="low_carbs">Low Carbs</string>
+    <string name="vegan">Vegan</string>
+    <string name="pasta">Pasta</string>
+    <string name="seafood">Seafood</string>
+    <string name="workout">Workout</string>
+    <string name="item_calories">Item Calories</string>
+    <string name="add_image">add_image</string>
+    <string name="delete">Delete</string>
+    <string name="record">Record</string>
+    <string name="upload">Upload</string>
+    <string name="remove">Remove</string>
+    <string name="save">Save</string>
+    <string name="video_description">Video Description</string>
+    <string name="content_add">Content Add</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="profile">Profile</string>
+    <string name="personal_info">Personal</string>
+    <string name="business_info">Business</string>
+    <string name="data_privacy">Data Privacy</string>
+    <string name="terms_of_service">Terms Of Service</string>
+    <string name="report_an_issue">Report An Issue</string>
+    <string name="logout">Logout</string>
+    <string name="personalize_info">Personalize</string>
+    <string name="privatize_data">Privatize Data</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="status">Status</string>
+    <string name="card_payments">Card Payments</string>
+    <string name="transfers">Transfers</string>
+    <string name="pending_payments">Pending Payments</string>
+    <string name="available">Available</string>
+    <string name="in_transit_to_bank">In Transit To Bank</string>
+    <string name="account_info">Account Info</string>
+    <string name="representative">Representative</string>
+    <string name="owners">Owners</string>
+    <string name="account_holder">Account Holder</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="please_head_to_settings_banking_to_make_changes_to_your_account"><![CDATA[Please head to \'Settings\' -> \'Banking\' to make changes to your account.]]></string>
+    <string name="owner_1_edit_button">owner 1 edit button</string>
+    <string name="owner_2_edit_button">owner 2 edit button</string>
+    <string name="owner_edit_button">owner edit button</string>
+    <string name="account_edit_button">account edit button</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="title_at_company">Title at Company</string>
+    <string name="street_address_2">Street Address 2</string>
+    <string name="social_security_number">Social Security Number</string>
+    <string name="ssn">SSN</string>
+    <string name="position">Position</string>
+    <string name="executive_or_owner">Are you an Executive?</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="education">Education</string>
+    <string name="go">Go</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="passion">Passion</string>
+    <string name="please_share_with_our_community_why_hope_to_serve_them">Please share with our community why hope to serve them.</string>
+    <string name="where_will_you_be_headquartered">Where will you be headquartered?</string>
+    <string name="self_taught_is_fine">* Self Taught is Fine *</string>
+    <string name="individual">Individual</string>
+    <string name="please_note_that_ruh_does_not_save_any_personal_info_but_instead_collects_only_what_is_necessary_for_our_third_party_banking_provider_stripe_to_be_in_compliance_with_federal_banking_regulation">* Please note that Taïste, Inc does not save any personal banking information, but instead collects only what is necessary for our third party banking provider \'Stripe\' to be in compliance with federal banking regulation. *</string>
+    <string name="stripe_s_terms_of_service">Stripe\'s Terms of Service</string>
+    <string name="currently_stripe_is_our_banking_provider_we_require_each_of_our_chef_s_to_view_stripe_s_terms_of_service_before_accepting_payouts_and_orders">Currently, Stripe is our banking provider. We require each of our chef\'s to view Stripe\'s Terms of Service before accepting payouts and orders.</string>
+    <string name="click_here_to_view">Click here to view</string>
+    <string name="do_you_accept">Do you accept?</string>
+    <string name="mcc_code">MCC Code</string>
+    <string name="an_mcc_code_is_a_merchant_category_code_describing_your_business_we_recommend_5812_for_catering_services">* An MCC Code is a 4 digit Merchant Category Code describing your business. We recommend 5812 for catering services. *</string>
+    <string name="business_url">Business Url</string>
+    <string name="feel_free_to_use_any_personal_or_social_media_website_describing_your_business">* Feel free to use any personal or social media website describing your business. *</string>
+    <string name="individual_address">Individual Address</string>
+    <string name="company_name">Company Name</string>
+    <string name="external_account">External Account</string>
+    <string name="company_phone">Company Phone</string>
+    <string name="company_address">Company Address</string>
+    <string name="tax_id">Tax Identification</string>
+    <string name="if_your_company_has_an_employer_s_identification_number_please_enter_here_if_not_please_enter_the_social_security_number_used_to_do_business">* If your company has an Employer Identification Number, please enter here. If not, please enter the social security number used to do business. *</string>
+    <string name="each_account_is_required_to_have_a_representative_to_take_responsibility_for_the_account">* Each account is required to have a representative to take responsibility for the account. *</string>
+    <string name="all_owners_with_25_or_more_ownership_must_be_reported_or_your_account_may_stop_processing_payouts_at_750_000">* All owners with 25% or more ownership must be reported.</string>
+    <string name="owner_add">owner_add</string>
+    <string name="primary_bank_account">Primary Bank Account</string>
+    <string name="local">Local</string>
+    <string name="nation">Nation</string>
+    <string name="region">Region</string>
+    <string name="any_food_preferences">Any food preferences?</string>
+    <string name="do_you_hope_to_find_local_regional_or_national_chefs">Do you hope to find local, regional, or national chefs?</string>
+    <string name="create_user">Create User</string>
+    <string name="new_user">New User</string>
+    <string name="current_user">Current User</string>
+    <string name="please_sign_in_to_create_new_profile">Please sign in to create new profile</string>
+    <string name="sign_in">Sign In</string>
+    <string name="please_enter_your_information">Please enter your information</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="all_passwords_must_be_at_least_8_characters_long_with_1_letter_1_number_and_1_special_character">* All passwords must be at least 8 characters long, with 1 letter, 1 number, and 1 special character. *</string>
+    <string name="let_s_setup_your_profile">Let\'s setup your profile</string>
+    <string name="need_an_account_sign_up_here">Need an Account? Sign Up Here</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="please_check_your_email_to_verify_your_email_address">Please check your email to verify your email address.</string>
+    <string name="send_again">Send Again</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="continue_1"><![CDATA[Continue ->]]></string>
+    <string name="federal_regulations">Federal Regulations</string>
+    <string name="please_note_that_federal_regulations_require_that_all_cooking_for_catering_and_meal_kit_services_be_done_in_a_licensed_commercial_kitchen_by_continuing_you_acknowledge_this_regulation_and_promise_to_abide_by_it">Please note that federal regulations require that all cooking for catering and meal kit services be done in a licensed commercial kitchen. By continuing you acknowledge this regulation and promise to abide by it.</string>
+    <string name="are_you_having_trouble_with_a_specific_event">Are you having trouble with a specific event?</string>
+    <string name="please_provide_a_brief_description_of_the_issue">Please provide a brief description of the issue.</string>
+    <string name="please_describe_the_issue_in_depth">Please describe the issue in depth.</string>
+    <string name="please_place_the_item_title_in_the_space_below">Please place the item title in the space below.</string>
+    <string name="submit">Submit</string>
+    <string name="how_can_we_reach_you">How can we reach you?</string>
+    <string name="coming_soon">coming soon</string>
+    <string name="sharable_link_to_profile">Sharable Link To Profile</string>
+    <string name="taiste">Taïste</string>
+    <string name="chef_parenthesis">(Chef)</string>
+    <string name="ta_stechef">TaïsteChef</string>
+    <string name="ta_ste">Taïste</string>
+    <string name="credits">Credits</string>
+    <string name="refund">Refund</string>
+    <string name="apply_credits">Apply</string>
+    <string name="credits_accrue_when_an_order_is_cancelled_or_when_coupons_are_applicable_credits_also_accrue_if_a_chef_does_not_accept_an_order_all_orders_are_refundable">* Credits accrue when an order is cancelled, or when coupons are applicable. Credits also accrue if a chef does not accept an order. All orders are refundable. *</string>
+    <string name="does_the_user_recommend">Does the user recommend?</string>
+    <string name="terms_of_service_1">Terms of Service</string>
+    <string name="terms_of_service_intro">These Terms of Service (\'Agreement\') govern your access to and use of the culinary software-as-a-service (\'Taïste\') mobile application provided by Taïste, Inc (\'Provider\'). By accessing or using Taïste, you agree to be bound by this Agreement.</string>
+    <string name="user_account_b">b. You are responsible for maintaining the confidentiality of your account login credentials and for all activities that occur under your account.</string>
+    <string name="user_account_a">a. To use Taïste, you must create a user account by providing accurate and complete information.</string>
+    <string name="user_account_c">c. You agree to notify us immediately of any unauthorized use of your account or any other security breach.</string>
+    <string name="use_of_taiste_c">c. You are solely responsible for any content you submit, including menu listings, reviews, and feedback, and you represent and warrant that you have all necessary rights to such content.</string>
+    <string name="use_of_taiste_b">b. You agree to use Taïste solely for lawful purposes and in compliance with all applicable laws and regulations.</string>
+    <string name="usea_of_taiste_a">a. Taïste provides a platform for culinary transactions, including ordering, delivery, and payment services.</string>
+    <string name="transactions_d">d. All payments made through Taïste are final, and refunds or cancellations are subject to the respective provider\'s policies.</string>
+    <string name="transactions_c">c. You agree to provide accurate and complete payment information and authorize Taïste to charge your selected payment method for all transactions.</string>
+    <string name="transactions_b">b. Prices displayed on Taïste are determined by the respective providers and may be subject to additional taxes, fees, and delivery charges.</string>
+    <string name="transactions_a">a. Taïste facilitates transactions between users and culinary service providers with Stripe Payments Services.</string>
+    <string name="transactions">Transactions and Payments</string>
+    <string name="intellectual_a">a. Taïste and its content, including but not limited to text, graphics, logos, and software, are owned by or licensed to Taïste and are protected by intellectual property laws.</string>
+    <string name="intellectual_b">b. You may not copy, modify, distribute, or reverse engineer Taïste or any part of it without the Taïste\'s prior written consent.</string>
+    <string name="intellectual_property">Intellectual Property</string>
+    <string name="privacy">Privacy</string>
+    <string name="privacy_a">a. Taïste collects and uses personal information in accordance with its Privacy Policy.</string>
+    <string name="privacy_b">b. By using Taïste, you consent to Taïste\'s collection, use, and disclosure of personal information as described in the Privacy Policy.</string>
+    <string name="disclaimers_a">a. Taïste is provided on an \'as-is\' basis without warranties of any kind, whether express or implied.</string>
+    <string name="disclaimers_b">b. Taïste is not responsible for the quality, safety, or legality of the culinary services provided by third-party providers.</string>
+    <string name="disclaimers">Disclaimers and Limitation of Liability</string>
+    <string name="disclaimers_c">c. Taïste shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of or relating to the use of Taïste or any transactions conducted through it.</string>
+    <string name="termination">Termination</string>
+    <string name="termination_a">a. Taïste reserves the right to suspend or terminate your access to Taïste at any time without notice if you violate this Agreement or engage in fraudulent or illegal activities.</string>
+    <string name="modification">Modification</string>
+    <string name="modification_a">a. Taïste may update or modify this Agreement from time to time, and any changes will be effective upon posting on Taïste.</string>
+    <string name="modification_b">b. Your continued use of Taïste after any modifications indicates your acceptance of the updated Agreement.</string>
+    <string name="governing_law_and_jurisdiction">Governing Law and Jurisdiction</string>
+    <string name="a_this_agreement_shall_be_governed_by_and_construed_in_accordance_with_the_laws_of_the_united_states">a. This Agreement shall be governed by and construed in accordance with the laws of the United States.</string>
+    <string name="b_any_dispute_arising_out_of_or_relating_to_this_agreement_shall_be_subject_to_the_exclusive_jurisdiction_of_the_courts_of_the_united_states">b. Any dispute arising out of or relating to this Agreement shall be subject to the exclusive jurisdiction of the courts of the United States.</string>
+    <string name="entire_agreement">Entire Agreement</string>
+    <string name="this_agreement_constitutes_the_entire_agreement_between_you_and_ta_ste_inc_regarding_your_use_of_ta_ste_and_supersedes_any_prior_agreements_or_understandings">This Agreement constitutes the entire agreement between you and Taïste, Inc regarding your use of Taïste and supersedes any prior agreements or understandings.</string>
+    <string name="please_read">Please read this Agreement carefully before using Taïste. If you do not agree with any provision of this Agreement, you should not access or use Taïste.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_intro">This Privacy Policy (\'Policy\') describes how Taïste, Inc (\'Provider\', \'we\', \'us\', or \'our\') collects, uses, and discloses personal information when you access or use our transaction-based culinary software-as-a-service mobile application (\'Taïste\'). By using Taïste, you agree to the terms and practices described in this Policy.</string>
+    <string name="information_we_collect">Information We Collect</string>
+    <string name="information_a">a. Personal Information: When you create an account or use Taïste, we may collect personal information such as your name, email address, phone number, and payment details.</string>
+    <string name="information_B">b. Transaction Information: We collect information about your culinary transactions, including order details, delivery address, and payment history.</string>
+    <string name="information_c">c. Usage and Device Information: We may collect information about your interactions with the App, such as your IP address, device information, operating system, and app usage data.</string>
+    <string name="information_d">d. Location Information: With your consent, we may collect and process your precise location information to provide location-based services.</string>
+    <string name="use_of_information">Use of Information</string>
+    <string name="use_a">a. We use the collected information to provide, maintain, and improve Taïste\'s functionality and services, including order processing, delivery, and customer support.</string>
+    <string name="user_b">b. We may use your email address or phone number to send transaction-related notifications, updates, and promotional communications, subject to your preferences and applicable laws.</string>
+    <string name="use_c">c. We may aggregate and anonymize data for statistical and analytical purposes to enhance our services and better understand user preferences and trends.</string>
+    <string name="sharing_of_information">Sharing of Information</string>
+    <string name="sharing_a">a. We may share your personal information with culinary service providers to fulfill your orders and facilitate transactions.</string>
+    <string name="sharing_b">b. We may share your information with trusted third-party service providers who assist us in operating Taïste, such as payment processors, delivery partners, and customer support providers.</string>
+    <string name="sharing_c">c. We may disclose your information if required by law, regulation, or legal process, or if we believe in good faith that such disclosure is necessary to protect our rights, the safety of others, or investigate fraud or security issues.</string>
+    <string name="sharing_d">d. In the event of a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred or disclosed as part of the transaction, subject to privacy laws and contractual obligations.</string>
+    <string name="data_retention">Data Retention</string>
+    <string name="data_a">a. We retain personal information for as long as necessary to fulfill the purposes outlined in this Policy, unless a longer retention period is required or permitted by law.</string>
+    <string name="data_b">b. We may retain and use aggregated or anonymized data indefinitely for analytical purposes.</string>
+    <string name="security">Security</string>
+    <string name="security_a">a. We implement reasonable security measures to protect personal information from unauthorized access, disclosure, or alteration.</string>
+    <string name="security_b">b. However, no method of transmission or electronic storage is completely secure. Therefore, we cannot guarantee the absolute security of your information.</string>
+    <string name="children_s_privacy">Children\'s Privacy</string>
+    <string name="children_a">Taïste is not intended for individuals under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a child, we will take steps to delete such information.</string>
+    <string name="your_rights_and_choices">Your Rights and Choices</string>
+    <string name="rights_a">a. You may access, update, correct, or delete your personal information through Taïste\'s settings or by contacting us directly.</string>
+    <string name="rights_b">b. You may unsubscribe from marketing communications by following the instructions in the communication or adjusting your notification preferences.</string>
+    <string name="rights_c">c. Depending on your jurisdiction, you may have additional rights regarding your personal information, such as the right to object to processing or the right to data portability. Please contact us for further information.</string>
+    <string name="third_party_links_and_services">Third-Party Links and Services</string>
+    <string name="third_a">Taïste may contain links to third-party websites or services that are not controlled or operated by us. This Policy does not apply to such third-party services, and we are not responsible for their privacy practices</string>
+    <string name="please_read_our">Please read our</string>
+    <string name="terms_of_service_2">Terms of Service</string>
+    <string name="and_our">and our</string>
+    <string name="privacy_policy_2">Privacy Policy</string>
+    <string name="before_continuing">before continuing.</string>
+    <string name="no_spaces">*No spaces*</string>
+    <string name="chef_name">Chef Name</string>
+    <string name="_1_uppercase_character_1_special_character_1_number_1_lowercase_letter_8_characters">*1 uppercase character, 1 special character, 1 number, 1 lowercase letter, 8 characters*</string>
+    <string name="brief_bio_expressing_your_interest_in_cooking">Brief bio expressing your interest in cooking</string>
+    <string name="chef_passion">Chef Passion</string>
+    <string name="please_enter_banking_info">Please enter banking info.</string>
+    <string name="add_owner">Add Owner</string>
+    <string name="all_owners_with_more_that_25_ownership_must_be_reported">*All owners with more that 25% ownership must be reported.*</string>
+    <string name="are_you_an_owner">Are you an Owner?</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="surprise_me">Surprise Me</string>
+    <string name="_1">Item Title</string>
+    <string name="personal_info1">Personal Info</string>
+    <string name="pending_amount">Pending Amount</string>
+    <string name="available_amount">Available Amount</string>
+    <string name="signature_dish">Signature Dish</string>
+    <string name="add_option">Add Option</string>
+    <string name="item_button">Item Button</string>
+    <string name="brief_introduction_and_why_people_should_believe_in_your_ability">Brief Introduction, and why people should believe in your ability.</string>
+    <string name="please_answer_all_questions_for_you_profile_to_appear_to_users">* Please answer all questions for you profile to appear to users*</string>
+    <string name="how_long_have_you_been_a_personal_chef">How long have you been a personal chef?</string>
+    <string name="length_in_years">Length in Years</string>
+    <string name="what_is_your_categorical_specialty">What is your categorical specialty?</string>
+    <string name="specialty">Specialty</string>
+    <string name="what_helps_you_excel_in_your_pursuit_of_becoming_a_renowned_chef">What helps you excel in your pursuit of becoming a renowned chef?</string>
+    <string name="what_helps_you_excel">What helps you excel?</string>
+    <string name="describe_your_most_prized_accomplishment">Describe your most prized accomplishment.</string>
+    <string name="most_prized_accomplishment">Most prized accomplishment</string>
+    <string name="are_you_available_for_trial_runs_weeks_and_or_months">Are you available for trial runs, weeks, and / or months?</string>
+    <string name="trial_runs">Trial Runs</string>
+    <string name="months">Months</string>
+    <string name="weeks">Weeks</string>
+    <string name="price">Price</string>
+    <string name="are_you_open_to_menu_requests">Are you open to menu requests?</string>
+    <string name="click_for_detail">Click for detail</string>
+    <string name="no_item">No Item</string>
+    <string name="time_period_of_service">Time Period of Service</string>
+    <string name="of_guest_being_serviced"># of Guest Being Serviced</string>
+    <string name="any_allergies">Any Allergies?</string>
+    <string name="list_allergies_here">List Allergies here.</string>
+    <string name="additional_menu_items_or_categories_requested">Additional Menu Items or Categories Requested</string>
+    <string name="please_list_exact_menu_item_titles_or_categories">Please list exact menu item titles or categories.</string>
+    <string name="regulation_agreement">Regulation Agreement</string>
+    <string name="notifications">Notifications</string>
+    <string name="deny">Deny</string>
+    <string name="menu_items_guide_to_posting">Menu Items: Guide to Posting</string>
+    <string name="meal_kit_items">Meal Kit Items</string>
+    <string name="executive_items">Executive Items</string>
+    <string name="guide_to_cater_items">Your Guide to Cater Items</string>
+    <string name="preparation">Preparation</string>
+    <string name="_1_create_your_menu_item_post">1. Create your menu item post.</string>
+    <string name="when_clicking_on_the_mealkit_tab_on_the_home_screen_you_will_be_prompted_to_the_menu_item_add_page_enter_your_menu_item_details_and_save_it_into_your_profile">When clicking on the MealKit Tab on the Home Screen, you will be prompted to the \'Menu Item Add\' Page. Enter your menu item details and save it into your profile.</string>
+    <string name="the_following_remain_optional_for_catering_items_but_highly_encouraged">*The following remain optional for catering items, but highly encouraged.*</string>
+    <string name="_2_add_your_ingredients_to_the_menu_item">2. Add your ingredients to the menu item.</string>
+    <string name="you_will_be_prompted_on_the_screen_after_adding_your_menu_item_to_add_your_ingredients_to_the_menu_item_please_type_or_write_the_list_take_a_picture_of_it_and_upload_it">You will be prompted, on the screen after adding your menu item, to add your ingredients to the menu item. Please type, or write, the list, take a picture of it, and upload it.</string>
+    <string name="_4_create_a_preparation_content_video_around_your_menu_item">4. Create a Preparation Content Video around your Menu Item.</string>
+    <string name="this_promotional_content_video_will_uniquely_go_over_the_preperation_of_your_meal_and_the_quality_you_can_bring_to_the_service_of_catering_additionally_it_will_promote_your_content_to_your_audience_and_show_the_final_product_to_be_enjoyed">This Promotional Content Video will uniquely go over the preperation of your meal, and the quality you can bring to the service of catering. Additionally, it will promote your content to your audience and show the final product to be enjoyed.</string>
+    <string name="_1_accept_or_deny">1. Accept or Deny</string>
+    <string name="you_will_have_the_option_of_accepting_every_order_before_scheduling_it_into_your_operations_this_occurs_in_the_orders_pending_tab"><![CDATA[You will have the option of accepting every order before scheduling it into your operations. This occurs in the \'Orders\' -> \'Pending\' Tab]]></string>
+    <string name="_2_travel_fee_requests">2. Travel Fee Requests</string>
+    <string name="you_will_be_able_to_negotiate_and_request_a_travel_fee_with_the_consumer_this_occurs_in_the_orders_pending_messages_for_travel_fee_tab_as_soon_as_the_user_pays_the_travel_fee_the_order_will_be_accepted_and_move_to_your_scheduled_orders_section"><![CDATA[You will be able to negotiate and request a travel fee with the consumer. This occurs in the \'Orders\' -> \'Pending\' -> \'Messages for Travel Fee\' tab. As soon as the user pays the travel fee, the order will be accepted and move to your \'Scheduled\' orders section.]]></string>
+    <string name="_3_messaging">3. Messaging</string>
+    <string name="we_highly_encourage_constant_communication_with_your_consumer_to_ensure_all_remain_on_the_same_page_in_expectation_this_can_be_done_in_the_scheduled_messages_tab"><![CDATA[We highly encourage constant communication with your consumer to ensure all remain on the same page in expectation. This can be done in the \'Scheduled\' -> \'Messages\' tab.]]></string>
+    <string name="_4_cancellations">4. Cancellations</string>
+    <string name="you_are_able_to_cancel_any_event_at_any_time_in_the_event_of_a_cancellation_after_the_event_has_been_scheduled_a_convenience_fee_will_be_issued_taken_out_of_your_next_payout_and_issued_to_the_consumer_5_of_the_total_order_cost_for_all_events_more_than_7_days_from_the_time_of_cancellations_15_for_all_events_less_than_7_days_from_the_time_of_cancellation">You are able to cancel any event at any time. In the event of a cancellation after the event has been scheduled, a convenience fee will be issued, taken out of your next payout, and issued to the consumer. 5% of the total order cost for all events more than 7 days from the time of cancellations; 15% for all events less than 7 days from the time of cancellation.</string>
+    <string name="all_payouts_will_be_issued_exactly_one_hour_of_the_events_scheduling">All Payouts will be issued exactly one hour of the events scheduling.</string>
+    <string name="continue_3">Continue</string>
+    <string name="guide_to_executive_items">Your Guide To Executive Items</string>
+    <string name="_2_list_up_to_4_additional_options">2. List up to 4 additional options</string>
+    <string name="you_have_the_option_of_listing_up_to_4_additional_options_this_will_act_as_your_culinary_styling_guide_for_consumers_to_best_understand_your_expertise_and_focus">You have the option of listing up to 4 additional options. This will act as your culinary styling guide for consumers to best understand your expertise and focus.</string>
+    <string name="_3_provide_a_brief_introduction">3. Provide a brief introduction</string>
+    <string name="this_introduction_will_further_detail_your_enthusiasm_for_cooking_for_your_target_audience">This introduction will further detail your enthusiasm for cooking for your target audience.</string>
+    <string name="_4_answer_the_following_questions">4. Answer the following questions.</string>
+    <string name="these_are_frequently_asked_questions_before_consumers_hire_executive_chefs">These are frequently asked questions before consumers hire executive chefs.</string>
+    <string name="_1a_add_your_ingredients_to_the_executive_items">1a. Add your ingredients to the executive items.</string>
+    <string name="_2a_create_a_preparation_guide_for_your_customer">2a. Create a Preparation Guide for your customer.</string>
+    <string name="_3_create_a_preparation_guide_for_your_customer">3. Create a Preparation Guide for your customer.</string>
+    <string name="your_preperation_guide_should_consist_of_all_the_ingredients_submitted_with_your_menu_item_each_ingredient_should_be_paired_with_portion_sizes_and_be_detailed_for_the_user_to_follow_step_by_step_this_guide_will_add_detail_in_the_preperation_of_the_supposed_item_please_type_or_write_the_list_take_a_picture_of_it_and_upload_it">Your preperation guide should consist of all the ingredients submitted with your menu item. Each ingredient should be paired with portion sizes and be detailed for the user to follow step by step. This guide will add detail in the preperation of the supposed item. Please type, or write, the list, take a picture of it, and upload it.</string>
+    <string name="_3a_create_a_promotional_content_video_around_your_menu_item">3a. Create a Promotional Content Video around your Menu Item.</string>
+    <string name="this_promotional_content_video_will_uniquely_go_over_the_preperation_of_your_meal_and_the_quality_you_can_bring_to_your_executive_chef_service_additionally_it_will_promote_your_content_to_your_audience_and_show_the_final_product_to_be_enjoyed">This Promotional Content Video will uniquely go over the preperation of your meal, and the quality you can bring to your Executive Chef service. Additionally, it will promote your content to your audience and show the final product to be enjoyed.</string>
+    <string name="menu_item_additions">Menu Item Additions</string>
+    <string name="ingredients_snapshot">Ingredients Snapshot</string>
+    <string name="preparation_guide_snapshot">Preparation Guide Snapshot</string>
+    <string name="promotional_content_video">Promotional Content Video</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="not_required_but_encouraged">*Only required for meal kit items, but encouraged*</string>
+    <string name="example_items">Example Items</string>
+
+
+    <string-array name="typeOfEvent">
+        <item>Corporate</item>
+        <item>Social</item>
+        <item>Celebration</item>
+        <item>Birthday</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="timePeriodOfEvent">
+        <item>Trial Run</item>
+        <item>Weeks</item>
+        <item>Months</item>
+    </string-array>
+
+
+    <string-array name="catering_quantityOfEvent">
+        <item>1-10</item>
+        <item>11-25</item>
+        <item>26-40</item>
+        <item>41-55</item>
+        <item>56-70</item>
+        <item>71-90</item>
+    </string-array>
+
+
+    <string-array name="personal_chef_quantityOfEvent">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+
+    <string-array name="meal_kit_quantityOfEvent">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="type_of_service">
+        <item>Cater Items</item>
+        <item>Personal Chef Items</item>
+        <item>MealKit Items</item>
+    </string-array>
+
+
+    <string-array name="type_of_service_all">
+        <item>All Items</item>
+        <item>Cater Items</item>
+        <item>Personal Chef Items</item>
+        <item>MealKit Items</item>
+    </string-array>
+
+
+    <string-array name="executive_1">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>

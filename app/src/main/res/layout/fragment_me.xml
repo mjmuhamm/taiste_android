@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".both.ProfileAsUser">
+
+    <TextView
+        android:id="@+id/no_items_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:textColor="@color/main"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/notifications_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/notifications"
+                android:src="@drawable/notifications" />
+
+            <ImageView
+                android:id="@+id/notifications_image"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:visibility="gone"
+                android:layout_marginStart="19dp"
+                android:contentDescription="@string/notifications"
+                android:src="@drawable/circle" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/settings"
+            android:src="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/initial_layout"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/default_profile" />
+
+            <LinearLayout
+                android:id="@+id/user_profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/preferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/user_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/main"
+                    android:textColorHighlight="@color/main"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/user_toggle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/orders"
+
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/secondary"
+                app:cornerRadius="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chefs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/chefs"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/likes"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="1dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:text="@string/reviews"
+                android:padding="4dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="1dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_recycler_layout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/user_toggle_layout"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orders_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chefs_recycler_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/likes_recycler_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviews_recycler_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/credits_recycler_view"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

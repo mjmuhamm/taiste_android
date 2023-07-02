@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".both.GuideToPosting">
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Taïste: Guide To Purchasing"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/red700"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:cornerRadius="1dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/individual_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/initial_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Hi Chefs"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Thank you for being here! Helping us take on the journey of servicing our communities, with culinary inspirations from around the world. Our goal is to make your business operate efficiently, effectively, and at scale. In this we have created a powerful Software-as-a-Service Solution to service your business. With powerful data modeling, and suggestion features, we dedicate ourselves to serving your business with advanced consumer insight, and nationwide leads, so that you can operate your entire business, with artificial intelligence, from your phone. In this, we have prepared a detailed posting schema to guide you in posting, and preparing your catering, executive chef, and meal kit events and disbursements. Please continue in reading the following, and welcome, to Taïste."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="There are three revenue models on the Taïste platform to supplement your consumer requirements: Catering Events, Personal Chef Events, and Meal Kit Purchasing. Additionally, we include a content tab to engage users with event hosting, recipe inspirations, and any other food related video content that you can imagine; and Banking."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Cater Event Posting"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Each consumer will be presented with a list of cater item suggestions, that cater to their personalized palates, from chefs across the United States, and the world. Your Cater Item Post will include an item title, maximum of 4 pictures, item description, calorie count, Price Point Per Serving / Guest, and the categories you believe your item best represents."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Pricing"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Your menu item pricing completely in your control; but please keep in mind that we advocate transparency with our users in weighing the value of cater items based on industry standards, and estimates in food preparation costs, and the number of users that have positively reviewed your cater item. We recommend to users that Cater Items be priced, per serving, in the ranges of $12-$65. Please try to follow this standard, as internal auditing will take place in the event that our team believes that your price is a bit overpriced, or if users begin reporting your cater item listings."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Purchasing"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="When a user purchases an item, Taïste, Inc immediately is notified, and operates as an intermediary between events for user payment and chef payouts."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Travel Fee Capability"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="If the event location is more than 45 miles of your business location, a travel fee option will be allotted to you, where in which you will be able to negotiate with the user on what you believe should adequately supplement your travel, and what the user can afford.  Upon payment, the event will automatically be accepted and will appear in your ‘Scheduled’ Orders tab."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="If the event is less than 45 miles, then normal operations will prompt, and you will have the option to accept or cancel the event based on your business and personal responsibilities. "
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Meal Kit prices can range anywhere from $8 - $15 per plate."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Messaging"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="As soon as an event is accepted, you will be able to communicate directly with the user, in the ‘Messaging’ tab of your event post, to best plan for the event. If there are any surprises, please be sure to communicate them to your user to ensure a high rating for your event."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Payouts"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="We have set all cater event payouts to disburse into your bank account exactly one hour after the event has occurred. We understand the pain in preparation expenses and planning, and in the way of transaction integrity, and customer service, we have prompted our systems to continue with this path forward. As time continues, we will be able to award preparation disbursements, applicable to high-performing and trusted chefs."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Cancellations"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="If you have not accepted the event, your cancellation will automatically reward a full refund to the user. If the event has been accepted, a 5% inconvenience fee, of the total event cost, will awarded to the user, at the expense of your next payout. If the event is scheduled for less than 7 days of the cancellation date, your inconvenience fee will graduate to 15% of the total order cost, to be awarded to the user."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Executive Chef Posting"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Each consumer will be presented with a list of cater item suggestions, that cater to their personalized palates, from chefs across the United States, and the world. Your Cater Item Post will include an item title, maximum of 4 pictures, item description, calorie count, Price Point Per Serving / Guest, and the categories you believe your item best represents."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Pricing"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Pricing for your executive chef event will be presented to the user in a lump sum format, representing each day that will be serviced, per day (not per hour). We have prompted our user community that Executive Chef Pricing can range anywhere from $60-$4,000. Please charge for your comfortability,  and expertise. Similarly to Cater Items, All Chefs will be presented to the user in a feed, focusing on the user’s preferences. "
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Payouts"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Payouts for Executive Chef Events will disburse to your bank account exactly one hour of each day that is being serviced. For Example, if you are to receive $5,000 for an executive chef event scheduled for 7 days, that $5,000 payment will be divided by 7, representing each service day, and disbursed to you exactly one hour after each service day has completed."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cancellation expectations apply similarly to Executive Chef Postings."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="MealKit Item Posting"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Meal Kit Items represent a huge opportunity for our chef community, and as such, require a special regulation to associate with delivery expectations. Nonetheless, we are here to help you succeed, exceptionally."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Posting"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Meal Kit postings appear similarly to Cater Items. You are presented with an opportunity to present your item title, item pictures, description, calories, pricing, and categories of relevance. We have suggested to our user community that Meal Kit Items should reflect a price point of between $7-$14 per meal, to best compete with any external competitor, and to best service our user base. We prompt users to select from time frames, that represent Trial Runs, Weeks, and Months."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Preparation"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="As the chef, we hold you to the responsibility of delivering exceptionally high meal-prepped items to your consumer. In this, we extract an additional $70 preparation charge from the user to supplement your preparation, shipping, and convenience costs; per $30 day period. With this extra $70, we hope for it to help in meal kit containers, averaging in price from $28-$40 for 30 day container allotments, and shipping expenses that can range from $8-$15. Before shipping, we require each chef to upload pictures of one meal prepped container, and the presentation of the meals-prepped inside of the shipping package, being delivered to the consumer."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Payouts"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="After the item is shipped to your consumer, you will be expected to upload a picture of the tracking number, and tracking label from the shipping company, for the viewer and internal staff to verify. After verification, your payout will be disbursed."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cancellation expectations apply similarly to MealKit Postings."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Video Content Posting"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="We expect for all video content to be limited to food engagement content only. Any other content will be removed, and repeat offenses will result in the dismissal of your account and use of the Taïste platform."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Taïste Fees"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:text="We charge a 6% service fee for all orders. Local and Nationwide Sales Taxes are deducted accordingly."
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:text="We know this process can be overwhelming, and we will be with you every step of the way."
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

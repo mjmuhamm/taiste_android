@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chef.menu_item_post_guide.GuideToExecutiveItems">
+
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/guide_to_executive_items"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/gray400" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preparation"
+                android:textColor="@color/main"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="220dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1_create_your_menu_item_post"
+                    android:textColor="@color/main"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/menu_item_post_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:text="Example"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue500"
+                    app:drawableStartCompat="@drawable/example"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/when_clicking_on_the_mealkit_tab_on_the_home_screen_you_will_be_prompted_to_the_menu_item_add_page_enter_your_menu_item_details_and_save_it_into_your_profile"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2_list_up_to_4_additional_options"
+                    android:textColor="@color/main"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_have_the_option_of_listing_up_to_4_additional_options_this_will_act_as_your_culinary_styling_guide_for_consumers_to_best_understand_your_expertise_and_focus"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_provide_a_brief_introduction"
+                android:textColor="@color/main"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/this_introduction_will_further_detail_your_enthusiasm_for_cooking_for_your_target_audience"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_answer_the_following_questions"
+                android:textColor="@color/main"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/these_are_frequently_asked_questions_before_consumers_hire_executive_chefs"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_following_remain_optional_for_catering_items_but_highly_encouraged"
+                android:textColor="@color/gray400"
+                android:textAlignment="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1a_add_your_ingredients_to_the_executive_items"
+                    android:textColor="@color/main"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/ingredients_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue500"
+                    app:drawableStartCompat="@drawable/example"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_will_be_prompted_on_the_screen_after_adding_your_menu_item_to_add_your_ingredients_to_the_menu_item_please_type_or_write_the_list_take_a_picture_of_it_and_upload_it"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2a_create_a_preparation_guide_for_your_customer"
+                    android:textColor="@color/main"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/preperation_content_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue500"
+                    app:drawableStartCompat="@drawable/example"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_preperation_guide_should_consist_of_all_the_ingredients_submitted_with_your_menu_item_each_ingredient_should_be_paired_with_portion_sizes_and_be_detailed_for_the_user_to_follow_step_by_step_this_guide_will_add_detail_in_the_preperation_of_the_supposed_item_please_type_or_write_the_list_take_a_picture_of_it_and_upload_it"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_3a_create_a_promotional_content_video_around_your_menu_item"
+                    android:textColor="@color/main"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/preperation_guide_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/blue500"
+                    app:drawableStartCompat="@drawable/example"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/this_promotional_content_video_will_uniquely_go_over_the_preperation_of_your_meal_and_the_quality_you_can_bring_to_your_executive_chef_service_additionally_it_will_promote_your_content_to_your_audience_and_show_the_final_product_to_be_enjoyed"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orders"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/main"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="220dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/gray300" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_accept_or_deny"
+                android:textColor="@color/main"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_will_have_the_option_of_accepting_every_order_before_scheduling_it_into_your_operations_this_occurs_in_the_orders_pending_tab"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_travel_fee_requests"
+                android:textColor="@color/main"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_will_be_able_to_negotiate_and_request_a_travel_fee_with_the_consumer_this_occurs_in_the_orders_pending_messages_for_travel_fee_tab_as_soon_as_the_user_pays_the_travel_fee_the_order_will_be_accepted_and_move_to_your_scheduled_orders_section"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_messaging"
+                android:textColor="@color/main"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/we_highly_encourage_constant_communication_with_your_consumer_to_ensure_all_remain_on_the_same_page_in_expectation_this_can_be_done_in_the_scheduled_messages_tab"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_cancellations"
+                android:textColor="@color/main"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_are_able_to_cancel_any_event_at_any_time_in_the_event_of_a_cancellation_after_the_event_has_been_scheduled_a_convenience_fee_will_be_issued_taken_out_of_your_next_payout_and_issued_to_the_consumer_5_of_the_total_order_cost_for_all_events_more_than_7_days_from_the_time_of_cancellations_15_for_all_events_less_than_7_days_from_the_time_of_cancellation"
+                android:textColor="@color/main"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_payouts_will_be_issued_exactly_one_hour_of_the_events_scheduling"
+                android:textColor="@color/main"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/continue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="@string/continue_3"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/main"
+                app:cornerRadius="1dp" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

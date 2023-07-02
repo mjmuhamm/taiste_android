@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:usesCleartextTraffic="true"
+    tools:targetApi="m">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bloom"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name="com.ruh.taiste.chef.ExecutiveQuestionnaire"
+            android:exported="false" />
+        <activity
+            android:name=".chef.YoutubeView"
+            android:exported="false" />
+        <activity
+            android:name=".chef.MenuItemAdditions"
+            android:exported="false" />
+        <activity
+            android:name=".chef.menu_item_post_guide.GuideToExecutiveItems"
+            android:exported="false" />
+        <activity
+            android:name=".chef.menu_item_post_guide.GuideToCaterItems"
+            android:exported="false" />
+        <activity
+            android:name=".both.GuideToPosting"
+            android:exported="false" />
+        <activity
+            android:name=".both.GuideToPurchasing"
+            android:exported="false" />
+        <activity
+            android:name=".both.Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".both.ChefContent"
+            android:exported="false" />
+        <activity
+            android:name=".user.PersonalChefOrderDetail"
+            android:exported="false" />
+        <activity
+            android:name=".chef.Owners"
+            android:exported="false" />
+        <activity
+            android:name=".chef.PersonalChefAdd"
+            android:exported="false" />
+        <activity
+            android:name=".chef.AddPersonBanking"
+            android:exported="false" />
+        <activity
+            android:name=".both.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".both.TermsOfServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".both.ReportAnIssue"
+            android:exported="false" />
+        <activity
+            android:name=".chef.Disclaimer"
+            android:exported="false" />
+        <activity
+            android:name=".both.VerifyEmail"
+            android:exported="false" />
+        <activity
+            android:name=".both.CreateUser"
+            android:exported="false" />
+        <activity
+            android:name=".chef.StripeTermsOfService"
+            android:exported="false" />
+        <activity
+            android:name=".chef.Banking"
+            android:exported="false" />
+        <activity
+            android:name=".user.Personalize"
+            android:exported="false" />
+        <activity
+            android:name=".chef.Business"
+            android:exported="false" />
+        <activity
+            android:name=".chef.Personal"
+            android:exported="false" />
+        <activity
+            android:name=".user.AccountSettings"
+            android:exported="false" />
+        <activity
+            android:name=".chef.AccountSettings"
+            android:exported="false" />
+        <activity
+            android:name=".chef.ContentAdd"
+            android:exported="false" />
+        <activity
+            android:name=".chef.MenuItemAdd"
+            android:exported="false" />
+        <activity
+            android:name=".chef.adapters.orders.PendingAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".chef.fragments.Dashboard"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".both.Messages"
+            android:exported="false" />
+        <activity
+            android:name=".both.ProfileAsUser"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="deeplink"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".user.Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".both.ItemDetail"
+            android:exported="false" />
+        <activity
+            android:name=".user.Login"
+            android:exported="false" />
+        <activity
+            android:name=".chef.Login"
+            android:exported="false" />
+        <activity
+            android:name=".chef.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.MainActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chef.ContentAdd">
+
+
+    <RelativeLayout
+        android:id="@+id/initial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/add_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/main"
+            android:text="@string/content_add"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/initial_layout"
+        android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_above="@id/item_description"
+        android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/play_pause_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/item_description"
+            android:backgroundTint="@color/transparent"/>
+
+        <ImageView
+            android:id="@+id/play_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_image"
+            android:alpha="0.9"/>
+
+
+
+        <EditText
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/save_layout"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:hint="@string/video_description"
+            android:inputType="textCapSentences"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:id="@+id/save_layout"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/remove"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/remove"
+            android:textColor="@color/main"
+            android:textAllCaps="false"
+            app:cornerRadius="1dp"
+            android:backgroundTint="@color/white"
+            android:textSize="15sp"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:text="@string/save"
+            app:cornerRadius="1dp"
+            android:textColor="@color/main"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/record_layout"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/record"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/record"
+        android:textColor="@color/main"
+        android:textAllCaps="false"
+        app:cornerRadius="1dp"
+        android:backgroundTint="@color/white"
+        android:textSize="15sp"
+        />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:text="@string/upload"
+            app:cornerRadius="1dp"
+            android:textColor="@color/main"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/away_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/away_user_image"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/default_profile"/>
+
+        <TextView
+            android:id="@+id/away_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="2.5dp"
+            android:textColor="@color/gray500"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/away_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_below="@id/away_message"
+            android:textColor="@color/gray500"
+            android:textSize="11.5sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_marginStart="14dp"
+        android:visibility="gone"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_user_image"
+            android:layout_width="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="43dp"
+            android:src="@drawable/default_profile"/>
+
+        <TextView
+            android:id="@+id/home_message"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="2.5dp"
+            android:textColor="@color/main"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/home_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_below="@id/home_message"
+            android:textColor="@color/main"
+            android:textSize="11.5sp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/system_message"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main"
+        android:textStyle="bold"
+        android:textSize="13sp"/>
+
+</RelativeLayout>
